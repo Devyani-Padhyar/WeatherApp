@@ -119,16 +119,16 @@
                     <div class="default-content">
                         <img src="https://cdn-icons-png.flaticon.com/512/1163/1163661.png" alt="Weather Illustration"
                             class="default-icon">
-                        <h3>Welcome to Weather Go!</h3>
-                        <p>🌤️ Enter a city above to see the current weather conditions instantly.</p>
-                        <p>💡 Tip: Try your favorite cities like Mumbai, Delhi, or New York!</p>
+                        <h3 class="default-h">Welcome to Weather Go!</h3>
+                        <p class="defpara">🌤️ Enter a city above to see the current weather conditions instantly.</p>
+                        <p class="defpara">💡 Tip: Try your favorite cities like Mumbai, Delhi, or New York!</p>
                     </div>
                 </div>
                 <div class="output-content">
                     <div class="weather-dashboard">
                         <div class="city-header">
                             <h2 id="city-name">City Name</h2>
-                            <p id="date-time">Mon, 15 Sep 2025 | 10:30 AM</p>
+                            <p id="date-time"><span id="day">Mon, </span>, <span id="date">15 Sep 2025</span> | <span id="time">10:30 AM</span></p>
                         </div>
 
                         <div class="main-weather">
@@ -166,6 +166,7 @@
     </section>
     <footer></footer>
     <script src="script.js"></script>
+    <!-- <script src="city.list.json"></script> -->
 </body>
 
 </html>
