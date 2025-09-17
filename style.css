@@ -97,11 +97,13 @@ h1 {
     margin: 5.5% auto;
     position: relative;
     height: auto;
+    /* height:80%; */
     background: linear-gradient(120deg, #bfe9f7, #c0fad5);
     border-radius: 12px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.45);
     min-height: 14rem;
     transition: 0.3s;
+    background: linear-gradient(to bottom, #88d0fd, #c3e1ff);
 }
 
 .mainbox:hover {
@@ -405,6 +407,7 @@ h1 {
     color: #001f3f;
     font-family: 'Arial', sans-serif;
     transition: background 0.3s;
+    margin-bottom:1.4rem;
 }
 
 #temperature {
@@ -608,7 +611,7 @@ h1 {
         margin-top: 28%;
         padding-top: 10%;
         height: 100%;
-        padding-bottom:2.5rem;
+        padding-bottom: 2.5rem;
     }
 
     h1 {
@@ -658,8 +661,8 @@ h1 {
     #about {
         margin-top: 25%;
         padding: 2rem;
-        padding-bottom:5rem;
-        padding-top:3rem;
+        padding-bottom: 5rem;
+        padding-top: 3rem;
         margin-bottom: 25.5rem;
         border: 2px solid #ddd;
         border-radius: 12px;
@@ -702,7 +705,7 @@ h1 {
         width: 100%;
         margin-top: 7rem;
         height: 100%;
-        background:rgba(173, 229, 255, 0.699);
+        background: rgba(173, 229, 255, 0.699);
         margin-bottom: 0;
     }
 
