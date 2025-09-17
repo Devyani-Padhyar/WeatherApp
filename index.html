@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <h1>Weather Go</h1>
+        <div class="nav-links">
+            <button href="" id="homepage-link" class="navbtns">Homepage</button>
+            <button href="" id="about-link" class="navbtns">About</button>
+            <button href="" id="similar-apps" class="navbtns">Similar Apps</button>
+        </div>
+    </nav>
+    <section>
+        <div id="about">
+            <h2>About This App</h2>
+            <p>
+                The Weather App helps you stay updated with current weather conditions in any
+                city across the globe. It was created as button project using HTML, CSS, and
+                JavaScript to demonstrate how real-time data can be fetched and displayed.
+            </p>
+            <h3>Key Features</h3>
+            <ul>
+                <li>🌡️ Get temperature, humidity, and weather conditions instantly</li>
+                <li>📍 Search by city name or select from popular cities</li>
+                <li>⏱️ Fast and reliable data</li>
+                <li>📱 Clean and mobile-friendly design</li>
+            </ul>
+            <h3>Why This App?</h3>
+            <p>
+                Weather affects our daily lives, and having the right information helps us plan
+                better. This app was created as button simple yet powerful tool for learning and
+                practical use.
+            </p>
+        </div>
+        <section class="similar-apps" >
+        <div class="similar">
+                <h2>Similar Apps</h2>
+                <div class="apps-container">
+                    <div class="app-card">
+                        <img src="https://cdn-icons-png.flaticon.com/512/1146/1146869.png" alt="App 1">
+                        <h3>WeatherNow</h3>
+                        <p>Simple and quick weather updates at your fingertips.</p>
+                        <a href="#">Visit</a>
+                    </div>
+
+                    <div class="app-card">
+                        <img src="https://cdn-icons-png.flaticon.com/512/1163/1163661.png" alt="App 2">
+                        <h3>SkyCast</h3>
+                        <p>Track live weather conditions with stunning visuals.</p>
+                        <a href="#">Visit</a>
+                    </div>
+
+                    <div class="app-card">
+                        <img src="https://cdn-icons-png.flaticon.com/512/414/414825.png" alt="App 3">
+                        <h3>ClimaCheck</h3>
+                        <p>Detailed forecasts and climate updates worldwide.</p>
+                        <a href="#">Visit</a>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+        <div class="mainbox">
+
+            <div class="header-mainbox">
+                <h2>Get the Weather</h2>
+            </div>
+
+            <div class="input-box">
+                <input list="cities" placeholder="Enter city name..." class="city-input">
+                <datalist id="cities">
+                    <!-- Indian Cities -->
+                    <option value="Mumbai">
+                    <option value="Delhi">
+                    <option value="Pune">
+                    <option value="Bengaluru">
+                    <option value="Hyderabad">
+                    <option value="Chennai">
+                    <option value="Kolkata">
+                    <option value="Ahmedabad">
+                    <option value="Jaipur">
+                    <option value="Lucknow">
+                    <option value="Nagpur">
+                    <option value="Indore">
+                    <option value="Bhopal">
+                    <option value="Chandigarh">
+                    <option value="Goa">
+                        <!-- Popular International Cities -->
+                    <option value="New York">
+                    <option value="London">
+                    <option value="Paris">
+                    <option value="Dubai">
+                    <option value="Tokyo">
+                    <option value="Singapore">
+                    <option value="Sydney">
+                    <option value="Toronto">
+                    <option value="Los Angeles">
+                    <option value="Berlin">
+                </datalist>
+                <!-- <input type="text" placeholder="Enter city name..." id="location-input" > -->
+                <button id="get-weather-btn">Get Weather</button>
+
+                <div class="loader" id="loader" style="display: none;">
+                    <img src="loader.gif" alt="Loading...">
+                    <p>Loading...</p>
+                </div>
+
+            </div>
+
+            <div class="output-box">
+                <div class="output-box-default">
+                    <div class="default-content">
+                        <img src="https://cdn-icons-png.flaticon.com/512/1163/1163661.png" alt="Weather Illustration"
+                            class="default-icon">
+                        <h3>Welcome to Weather Go!</h3>
+                        <p>🌤️ Enter a city above to see the current weather conditions instantly.</p>
+                        <p>💡 Tip: Try your favorite cities like Mumbai, Delhi, or New York!</p>
+                    </div>
+                </div>
+                <div class="output-content">
+                    <div class="weather-dashboard">
+                        <div class="city-header">
+                            <h2 id="city-name">City Name</h2>
+                            <p id="date-time">Mon, 15 Sep 2025 | 10:30 AM</p>
+                        </div>
+
+                        <div class="main-weather">
+                            <img id="weather-icon" src="https://cdn-icons-png.flaticon.com/512/869/869869.png"
+                                alt="Weather Icon">
+                            <div class="temp-condition">
+                                <h1 id="temperature">28°C</h1>
+                                <p id="condition">Sunny</p>
+                            </div>
+                        </div>
+
+                        <div class="weather-details">
+                            <div class="detail">
+                                <p>Feels Like</p>
+                                <span id="feels-like">30°C</span>
+                            </div>
+                            <div class="detail">
+                                <p>💧 Humidity</p>
+                                <span id="humidity">60%</span>
+                            </div>
+                            <div class="detail">
+                                <p>Wind</p>
+                                <span id="wind">10 km/h</span>
+                            </div>
+                            <div class="detail">
+                                <p>☁️ Clouds</p>
+                                <span id="clouds">20%</span>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+    </section>
+    <footer></footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

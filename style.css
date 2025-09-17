@@ -1,0 +1,714 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif
+}
+
+html,
+.header-mainbox,
+.input-box {
+    height: 100%;
+    width: 100%
+}
+
+.mainbox,
+#about {
+    animation: fadeIn 0.5s ease;
+}
+
+button {
+    cursor: pointer;
+}
+
+.header-mainbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+body {
+    scroll-behavior: smooth;
+    background-color: rgb(186, 235, 255);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #210362;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    width: 100%
+}
+
+h1 {
+    color: rgb(122, 248, 151);
+    font-size: 2rem;
+    margin: 0 0 0 2.5rem;
+    width: 30%
+}
+
+.nav-links {
+    display: flex;
+    gap: 10rem;
+    margin-right: 5.5rem;
+    justify-content: space-around;
+}
+
+.nav-links button {
+    background: transparent;
+    padding: 8px 16px;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.navbtns {
+    border: 2px solid lightgreen;
+    color: lightgreen;
+}
+
+.navbtns:hover {
+    background: lightgreen;
+}
+
+.nav-links button:hover {
+    color: navy;
+}
+
+.nav-links button:active {
+    outline: none;
+    transform: scale(0.95);
+    box-shadow: 0 0 0 2px rgba(5, 128, 128, 0.5);
+}
+
+/* MAINBOX */
+.mainbox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem;
+    width: 60%;
+    margin: 5.5% auto;
+    position: relative;
+    height: auto;
+    background: linear-gradient(120deg, #bfe9f7, #c0fad5);
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.45);
+    min-height: 14rem;
+    transition: 0.3s;
+}
+
+.mainbox:hover {
+    transform: scale(1.01);
+}
+
+.day-theme {
+    background: linear-gradient(30deg, #96beff, #72c4f8, #b3c3ff);
+    background: linear-gradient(to bottom, #88d0fd, #c3e1ff);
+
+}
+
+.header-mainbox {
+    background-color: rgba(20, 250, 4, 0.353);
+    text-align: center;
+    border-radius: 6px;
+    margin-bottom: 1.2rem;
+    padding: 12px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s;
+}
+
+.header-mainbox h2 {
+    font-size: 1.7rem;
+    color: rgb(17, 17, 109);
+}
+
+.input-box {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.input-box input {
+    padding: 0.5rem;
+    border: 1px solid #098711;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    width: 80%;
+    height: 3rem;
+    font-size: 18px;
+}
+
+.input-box input:hover {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(5, 128, 128, 0.5);
+}
+
+.input-box button {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #0e7114;
+    color: white;
+    font-weight: 500;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.red-place::placeholder {
+    color: red;
+    font-style: italic;
+}
+
+.input-box button:hover {
+    background-color: rgb(178, 23, 79);
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(178, 23, 79, 0.5);
+}
+
+.input-box button:active {
+    outline: none;
+    transform: scale(0.99);
+    box-shadow: 0 0 0 2px rgba(5, 128, 128, 0.5);
+}
+
+/* ABOUT SECTION CLASS CHANGE */
+.h1-abt {
+    color: #ffafaf;
+}
+
+.nav-link-abt {
+    color: #ffafaf;
+    border: 2px solid #ffafaf;
+}
+
+.nav-link-abt:hover {
+    background: #ffafaf;
+    color: navy;
+}
+
+.nav-link-abt:active {
+    outline: none;
+    transform: scale(0.95);
+    box-shadow: 0 0 0 2px rgba(5, 128, 128, 0.5);
+}
+
+/* About Section */
+#about {
+    display: none;
+    max-width: 800px;
+    margin-top: 5.8rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+    background: linear-gradient(135deg, #fcd4d4, #fbcbed);
+    border-radius: 12px;
+    line-height: 1.7;
+    border: 2px solid #ddd;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.45);
+}
+
+#about h2 {
+    text-align: center;
+    color: navy;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+#about h3 {
+    color: #333;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+#about p {
+    color: #555;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+#about ul {
+    list-style: none;
+    padding: 0;
+}
+
+#about ul li {
+    background: #f5f7ff;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    font-size: 15px;
+    color: #333;
+    transition: transform 0.2s;
+}
+
+#about ul li:hover {
+    transform: translateX(5px);
+    background: #e8ebff;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* output area */
+.output-box {
+    min-height: 250px;
+    margin-bottom: 1.5rem;
+    height: 22rem;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    animation: fadeIn 0.5s ease;
+}
+
+.output-box-default {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    padding: 30px 20px;
+    width: 100%;
+    max-width: 500px;
+    margin: 4.2rem auto;
+    text-align: center;
+}
+
+.default-icon {
+    width: 80px;
+    margin-bottom: 15px;
+    opacity: 0.9;
+}
+
+.default-content h3 {
+    font-size: 1.5rem;
+    color: #001f3f;
+    margin-bottom: 10px;
+}
+
+.default-content p {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+/* OUTPUT MAIN CONTENT */
+
+.output-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    width: 100%;
+    height: auto
+}
+
+
+.output-content {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+@keyframes weather-dash {
+    0% {
+        transform: translateY(-30px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes temp {
+    0% {
+        font-size: 2px;
+        opacity: 0;
+    }
+
+    100% {
+        font-size: 48px;
+        opacity: 1;
+    }
+}
+
+@keyframes cityname {
+    0% {
+        transform: scale(0.1);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes sunicon {
+    0% {
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.sunicon {
+    animation: sunicon 0.5s ease;
+}
+
+.cityName {
+    animation: cityname 0.5s ease;
+}
+
+.weather-dash {
+    animation: weather-dash 0.5s ease;
+}
+
+.temp {
+    animation: temp 0.5s ease;
+}
+
+.weather-dashboard {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem 0;
+    border-radius: 15px;
+    color: #001f3f;
+    font-family: 'Arial', sans-serif;
+    transition: background 0.3s;
+}
+
+#temperature {
+    color: #ff5722;
+    font-weight: bold;
+}
+
+#temperature:hover {
+    transform: scale(1.1);
+    transition: transform 0.5s ease-in-out;
+}
+
+.city-header {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.city-header h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.city-header p {
+    font-size: 1rem;
+    color: #333;
+}
+
+.main-weather {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.main-weather img {
+    width: 120px;
+    height: 120px;
+}
+
+.main-weather img:hover {
+    transform: scale(1.1);
+    transition: transform 0.8s ease-in-out;
+}
+
+.temp-condition h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+.temp-condition p {
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.weather-details {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.weather-details .detail {
+    background: rgba(0, 31, 63, 0.05);
+    background: rgba(1, 46, 92, 0.05);
+    padding: 1rem 1.5rem;
+    border-radius: 10px;
+    text-align: center;
+    min-width: 120px;
+    transition: 0.3s;
+}
+
+.weather-details .detail:hover {
+    background: rgba(1, 46, 92, 0.1);
+    transform: scale(1.05);
+}
+
+.weather-details .detail p {
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.weather-details .detail span {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+
+.similar-apps {
+    display: flex;
+    display: none;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.similar {
+    display: none;
+    padding: 3rem 2rem;
+    text-align: center;
+    width: 60%;
+    margin: 10rem 0;
+    background: linear-gradient(135deg, #d1f4ff, #ffffff);
+    border-radius: 12px;
+    box-shadow: 0 12px 25px rgba(39, 33, 60, 0.3);
+    animation: fadeIn 0.5s ease;
+}
+
+.similar h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #333;
+}
+
+.apps-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.app-card {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.app-card img {
+    width: 60px;
+    margin-bottom: 1rem;
+}
+
+.app-card h3 {
+    margin-bottom: 0.5rem;
+    color: #444;
+}
+
+.app-card p {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.app-card a {
+    display: inline-block;
+    text-decoration: none;
+    background: #00b4d8;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    transition: background 0.3s;
+}
+
+.app-card a:hover {
+    background: #0077b6;
+}
+
+.app-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(55, 67, 106, 0.45);
+}
+
+/* similar section nav change items */
+.h1-sim {
+    color: #60b7ff;
+}
+
+.nav-link-sim {
+    color: #60b7ff;
+    border: 2px solid #8dc2ff;
+}
+
+.nav-link-sim:hover {
+    background: #8dc2ff;
+    border-bottom: 2px solid #6acbff;
+    color: navy;
+}
+
+.nav-link-sim:active {
+    outline: none;
+    transform: scale(0.95);
+    box-shadow: 0 0 0 2px rgba(5, 128, 128, 0.5);
+}
+
+@media (max-width: 600px) {
+
+    .mainbox,
+    h1,
+    nav,
+    .nav-links {
+        width: 100%;
+    }
+
+    .mainbox {
+        margin: 20% auto;
+        margin-top: 28%;
+        padding-top: 10%;
+        height: 100%;
+        padding-bottom:2.5rem;
+    }
+
+    h1 {
+        margin: 0;
+        text-align: center;
+    }
+
+    nav {
+        align-items: center;
+        gap: 1.5rem;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .nav-links {
+        justify-content: space-between;
+        margin-right: 1rem;
+        gap: 1rem;
+    }
+
+    .nav-links button {
+        padding: 6px 12px;
+        font-size: 16px;
+    }
+
+    .input-box {
+        margin-top: 1rem;
+    }
+
+    .input-box input {
+        width: 70%;
+        font-size: 16px;
+    }
+
+    .input-box button {
+        font-size: 14px;
+        padding: 0.5rem;
+    }
+
+    .output-box {
+        /* margin-top: 5%; */
+        padding: 1rem;
+        margin-bottom: 12rem;
+    }
+
+    #about {
+        margin-top: 25%;
+        padding: 2rem;
+        padding-bottom:5rem;
+        padding-top:3rem;
+        margin-bottom: 25.5rem;
+        border: 2px solid #ddd;
+        border-radius: 12px;
+    }
+
+    .weather-dashboard {
+        padding: 1rem;
+        margin: 0;
+    }
+
+    .main-weather {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .weather-details {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+    }
+
+    .detail {
+        padding: 1.5rem 2rem;
+        width: 8.7rem;
+        border-radius: 12px;
+        min-width: 150px;
+        transition: 0.5s;
+        margin-top: 1rem;
+    }
+
+    .output-box-default {
+        max-width: 500px;
+        margin: 1.2rem auto;
+    }
+
+    .similar {
+        padding: 3rem 2rem;
+        padding-top: 10%;
+        width: 100%;
+        margin-top: 7rem;
+        height: 100%;
+        background:rgba(173, 229, 255, 0.699);
+        margin-bottom: 0;
+    }
+
+    .app-card {
+        padding: 1.5rem;
+        width: 450px;
+    }
+
+}
